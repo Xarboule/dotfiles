@@ -15,3 +15,16 @@
   (package-install 'use-package))
 
 (org-babel-load-file "~/.emacs.d/configuration.org")
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   '(ov org-colored-text yaml-mode use-package undo-tree solarized-theme scss-mode scala-mode sbt-mode rainbow-delimiters racket-mode python-mode py-autopep8 projectile paredit org-plus-contrib org-bullets modus-operandi-theme minions ivy-xref hydra htmlize helpful graphviz-dot-mode go-errcheck gnuplot git-timemachine geiser forge flycheck-package elpy eglot dumb-jump diff-hl company-restclient company-jedi company-go company-coq company-box boogie-friends avy auto-compile ag)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
