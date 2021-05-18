@@ -8,10 +8,12 @@
   Set repositories :
   
   #+begin_src emacs-lisp
-    (require 'package)
-    (setq package-archives '(("melpa" . "https://melpa.org/packages/")))  
+            (require 'package)
+            (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
+                                     ("melpa" . "https://melpa.org/packages/")
+                                     ("org" . "http://orgmode.org/elpa/")))  
 
-    (package-initialize)
+            (package-initialize)
   #+end_src
 
 I use =use-package= to install and configure my packages. My =init.el= includes the
