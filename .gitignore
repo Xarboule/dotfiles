@@ -3,3 +3,4 @@ configuration.el
 elpa/
 network-security.data
 places
+tramp
