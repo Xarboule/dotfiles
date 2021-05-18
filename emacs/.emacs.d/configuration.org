@@ -5,19 +5,28 @@
 
 
 * Configure =use-package=
+  
+  Set repositories :
+  
+  #+begin_src emacs-lisp
+    (require 'package)
+    (setq package-archives '(("melpa" . "https://melpa.org/packages/")))  
+
+    (package-initialize)
+  #+end_src
 
 I use =use-package= to install and configure my packages. My =init.el= includes the
-initial setup for =package.el= and ensures that =use-package= is installed, since I
-wanna do that right away.
+  initial setup for =package.el= and ensures that =use-package= is installed, since I
+  wanna do that right away.
 
-This makes sure that =use-package= will install the package if it's not already
-available. It also means that I should be able to open Emacs for the first time
-on a fresh Debian box and have my whole environment automatically installed. I'm
-not /totally/ sure about that, but we're gettin' close.
+  This makes sure that =use-package= will install the package if it's not already
+  available. It also means that I should be able to open Emacs for the first time
+  on a fresh Debian box and have my whole environment automatically installed. I'm
+  not /totally/ sure about that, but we're gettin' close.
 
 #+begin_src emacs-lisp
-  (require 'use-package-ensure)
-  (setq use-package-always-ensure t)
+    (require 'use-package-ensure)
+    (setq use-package-always-ensure t)
 #+end_src
 
 Always compile packages, and use the newest version available.
@@ -90,6 +99,7 @@ Why not?
 Solarized dark theme.
    
 #+begin_src emacs-lisp
+  (use-package solarized-theme)
   (load-theme 'solarized-dark t)
 #+end_src
 
