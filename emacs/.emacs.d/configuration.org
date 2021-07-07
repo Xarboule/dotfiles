@@ -78,7 +78,7 @@ I don't usually use the menu or scroll bar, and they take up useful space.
 #+begin_src emacs-lisp
   (tool-bar-mode 0)
   (menu-bar-mode 0)
-  (scroll-bar-mode -1)
+  ;;;(scroll-bar-mode -1)
 #+end_src
 
 There's a tiny scroll bar that appears in the minibuffer window. This disables
@@ -173,12 +173,12 @@ I use =eglot= as my LSP client.
 *** Racket
 
 #+begin_src emacs-lisp
-  (use-package geiser
-    :config (setq geiser-active-implementations '(racket)))
+  ;;;(use-package geiser
+  ;;;  :config (setq geiser-active-implementations '(racket)))
 
-  (use-package racket-mode
-    :hook (racket-mode . racket-xp-mode)
-    :mode "\\.rkt\\'")
+  ;;;(use-package racket-mode
+  ;;;  :hook (racket-mode . racket-xp-mode)
+  ;;;  :mode "\\.rkt\\'")
 #+end_src
 
 *** All Lisps
