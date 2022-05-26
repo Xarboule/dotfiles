@@ -20,8 +20,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(inhibit-startup-screen t)
  '(package-selected-packages
-   '(ov yaml-mode use-package solarized-theme scala-mode sbt-mode rainbow-delimiters racket-mode python-mode py-autopep8 paredit org-plus-contrib org-bullets hydra htmlize helpful graphviz-dot-mode gnuplot geiser flycheck-package elpy eglot company-jedi auto-compile)))
+   '(lsp-mode emojify magit-section org-roam ov yaml-mode use-package solarized-theme scala-mode sbt-mode rainbow-delimiters racket-mode python-mode py-autopep8 paredit org-plus-contrib org-bullets hydra htmlize helpful graphviz-dot-mode gnuplot geiser flycheck-package elpy eglot company-jedi auto-compile)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
