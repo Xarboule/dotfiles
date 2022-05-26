@@ -3,6 +3,12 @@
 #+COMMENT: Mostly inspired by Harry R. Schwartz, github.com/hrs/dotfiles
 #+OPTIONS: toc:nil num:nil
 
+
+* Ignore warnings
+#+BEGIN_SRC emacs-lisp
+(setq warning-minimum-level :emergency)
+#+END_SRC
+
 * Configure =use-package=
   
   Set repositories :
@@ -10,8 +16,7 @@
   #+begin_src emacs-lisp
             (require 'package)
             (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
-                                     ("melpa" . "https://melpa.org/packages/")
-                                     ("org" . "http://orgmode.org/elpa/")))  
+                                     ("melpa" . "https://melpa.org/packages/")))  
 
   #+end_src
 
